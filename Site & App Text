@@ -18,7 +18,7 @@ Project title: Myth Quiz!
 
 Project description:
 
-Ever got into an argument, I mean, discusion, about whether Bacchus is the god with grapes, or is he maybe the one holding the trident? Then this quiz is for you! Test your knowledge and challange your friends to a round of Myth Quiz, and find out who the real god is! 
+Ever got into an argument, I mean, discussion, about whether Bacchus is the god with grapes, or is he maybe the one holding the trident? Then this quiz is for you! Test your knowledge and challenge your friends to a round of Myth Quiz, and find out who the real god is! 
 
 List of technologies used:
 
@@ -29,6 +29,8 @@ Github & Gitbash
 
 Link to live app
 
-
+This app is still in development. At this time you would need to launch from the repo and run it locally. 
 
 Link to repo
+
+https://github.com/thinkful-ei-emu/QuizApp-DO-AP/tree/master/Quiz-App-AP-DO-starter
