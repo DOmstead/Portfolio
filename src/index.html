@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>David Omstead Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Dosis|Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Concert+One&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../imageFiles/Corgifavicon.ico" />
+    <link rel="stylesheet" href="../index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+    <header>   
+        <nav role="navigation" class = "nav">
+            <ul>
+                <!-- <li class= "nav-home"> -->
+                    <a class="nav-home" href="#"><li>Home</li></a>
+                <!-- </li> -->
+                <!-- <li class= "nav-about-me"> -->
+                    <a class="nav-about-me nav-link" href="#about-me"><li>About Me</li></a>
+                <!-- </li> -->
+                <!-- <li class= "nav-skils"> -->
+                    <a class="nav-skills nav-link" href="#skills"><li>Skills</li></a>
+                <!-- </li> -->
+                <!-- <li class= "nav-projects">  -->
+                    <a class="nav-projects nav-link" href="#projects"><li>Projects</li></a>
+                <!-- </li> -->
+                <!-- <li class= "nav-contact-me"> -->
+                    <a class="nav-contact-me nav-link" href="#contactMe"><li>Contact Me</li></a>
+                <!-- </li> -->
+                <button class= "hamburger"> &#9776; </button>
+                <button class= "cross"> &#735; </button>    
+            </ul>    
+        </nav>
+    </header>
+    <main role="main">
+        <div role="banner" class = "home" id = "home">
+            <h1>David Omstead</h1>
+            <img src = "../ImageFiles/TreeWIthLogosCropped.png" alt= "Tree with Javascript,HTML,CSS,and Python Logo" class = "Tree"/>
+            <h2>Let's Grow Technology Together</h2>
+        </div>
+
+        <section class = "about-me" id = "about-me">
+            <h2>About Me</h2>
+            <p>Hi, my name is David and I am a Full Stack Developer located in Phoenix, AZ.</p>
+            <img src= "../ImageFiles/Headshot Picture White Splash 2.jpg" alt = "Headshot showing a man in a suit smiling casually" class ="headshot">
+            <p>Tech in nature, and the nature of tech, are two things I have always found fascinating. Right now researchers around the world are discovering that frogs are dying at an alarming rate, with many species potentially facing the threat of extinction. 
+                It's basically the Frogpocalypse. Emerging tech could change that reality however, alongside changing reality as we understand it. Every year new advancements in technology change our relationship with the earth and have the potential to radically alter our understanding of it. </p>
+            <p>Even seemingly unrelated tech advances the human experience and how we interact with the world. I have not yet seen a rainforest in person, but with an app on my phone I can.
+                With VR I can walk through the trees. Improvements in AI and our evolving understanding of how to develop more capable neural networks is paving the way for rampant growth in many sectors, 
+                ranging from robotics to healthcare. Even helping to improve the back-end logic and efficiency for an insurance provider could decrease nationwide premiums by 5%, and that could fund research that leads to a cure for humanities most devastating diseases. 
+            </p>
+            <p>We could be responsible for the next great advancement in human technology, or at least get us all a little closer. Let's build something together!</p>
+            <!-- <button>View My Resume</button> -->
+        </section>
+
+        <section class = "skills" id = "skills">
+            <h2>Skills</h2>
+            <div class="skillSymbolsAndList">
+            <div class= "skillSymbolsBox">
+            <img src = "../ImageFiles/SkillsLogosAlpha.png" alt = "Image showing logos for HTMLS, CSS, Python, Javascript, Angular JS, and Github" class = "skillSymbolsContent">
+            </div>
+                <div class= "skillsListBox">
+                    <div class= "skillsListContent">
+                        <ul>
+                        <li class= "sectionHead">Languages</li>
+                            <ul>
+                                <li>Javascript</li>
+                                <li>Python</li>
+                                <li>HTML</li>
+                            </ul>
+                        <li class= "sectionHead">Styling</li>
+                            <ul>
+                                <li>CSS</li>
+                                <li>Photoshop</li>
+                                <li>Gimp</li>
+                            </ul>
+                        <li class= "sectionHead">Collaboration</li>
+                            <ul>
+                                <li>Github</li>
+                                <li>Gitbash</li>
+                                <li>Repl.it</li>
+                            </ul> 
+                        </ul>
+                    </div>
+                </div>    
+            </div>
+        </section>  
+
+        <section class = "projects" id = "projects">
+           <h2> Projects</h2>
+           <div>Myth Quiz</div>
+           <img src = "../ImageFiles/GreekGod2.jpg" alt= "A statue of Demeter" class= "Statue">
+           <p>Ever got into an argument, I mean, discussion, about whether Bacchus is the god with grapes, 
+               or is he maybe the one holding the trident? Then this quiz is for you! 
+               Myth Quiz utilizes the OpenTDB trivia database. Test your knowledge and challenge your friends to a round of Myth Quiz, and find out who the real god is! </p>
+            <ul>Technology Used
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+                <li>Github & Gitbash</li>
+            </ul>    
+            <a href = "https://domstead.github.io/MythQuiz/"> Play MythQuiz!</a>
+            <a href = "https://github.com/DOmstead/MythQuiz"> Checkout the repo!</a>
+        </section>
+      
+    </main>
+    <footer role="region" class = "contactMe" id = "contactMe">
+        <div class= "contactMe">
+            <img src = "../ImageFiles/Talk Bubbles.jpg" alt = "Conversation Bubbles">
+            <span class= "contact">Contact Me</span>
+        </div>
+        <div class= "location">
+        <img src = "../ImageFiles/Pin Symbol 2.png" alt ="Location Pin Symbol">
+         "Phoenix,AZ"
+        </div> 
+        <img src = "../ImageFiles/Mail Symbol 2.png" alt = "Mail Symbol">
+        <a href = "mailto: Contact@DavidOmstead.com">Email
+        </a>
+        <a href = "https://www.linkedin.com/in/davidomstead">
+            <img src = "../ImageFiles/LinkedIn Symbol 2.png" alt = "LinkedIN Symbol">
+        </a>
+        <a href = "https://github.com/DOmstead" >
+            <img src = "../ImageFiles/github icon 2.png" alt = "Git Symbol" class = "contact-me-git">
+        </a>
+    </footer>
+
+
+</body>
+
+<script type= "text/Javascript" src= "./index.js"></script>
+</html>

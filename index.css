@@ -1,0 +1,307 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Dosis",
+  sans-serif; 
+  font-size: 20px;
+  color: #444;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.nav{
+  background-color: #333;
+  overflow: hidden;
+}
+.nav a {
+  float: none;
+  display: block;
+  text-align: left;
+  text-decoration: none;
+  color: #f2f2f2;
+  font-size: 17px;
+  /* padding: 14px 16px; */
+}
+
+/* .nav a:hover{
+  background-color: rgb(153, 36, 36);
+  color: black;
+} */
+
+.hamburger, .cross{
+  position:absolute;
+  top:0;
+  right:0;
+  background: inherit;
+  color: #ddd;
+  line-height: 45px;
+  padding:13px 6%;
+  border: 0;
+  font-size:1.4em;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  
+}
+
+.cross{
+  font-size: 65px;
+  line-height: 70px;
+}
+
+/* This line keeps all nav links after home hidden */
+.nav a:not(:first-child) {
+  display: none;
+}
+
+.nav ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
+.nav li {display: block;   padding:15px 15px; }
+.nav a:not(:first-child) li:hover{display: block;    background:#ffffff; color: black; padding:15px 10px;}
+
+
+.nav-home {
+  background-color: #4CAF50;
+  color:white;
+  max-width: 65px;
+}
+
+.contact-me {
+  /* display: flex;
+  flex-direction: row; */
+  background-color: rgb(54, 54, 54);
+  padding: 1% 0;
+  color: #f2f2f2;
+  font-family: 'Dosis', cursive;
+  /* margin-top: 30px; */
+  font-size: 45px;
+  text-align: center;
+}
+
+.contact-me a {
+  padding: 10px;
+  max-width: 50%;
+}
+
+.contact{
+  display: flex;
+  justify-content: center;    
+  padding-bottom: 30px;
+}
+
+/* .skillSymbolsAndList{
+ display: flex;
+}
+
+.skillSymbolsAndList ul{
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+ }
+
+.skillsListBox{
+  background: dodgerblue;
+  flex: 30%;
+  margin-right: 20%;
+}
+
+.skillsListContent{
+  text-align: left;
+  padding-left: 10%;
+  padding-top: 0px;
+}
+
+.skillSymbolsBox{
+  flex: 50%;
+  margin-left: 20%;
+  margin-top: 0px;
+} */
+
+.skillSymbolsContent{
+  /* justify-content: right; */
+}
+
+.skills ul{
+  padding-inline-start: 0px;
+}
+
+.skills .sectionHead{
+  font-size: 40px;
+  font-weight: bold
+}
+
+.skills li{
+  font-size: 26px;
+}
+
+.skills h2, .projects h2, .about-me h2{
+  font-family: 'Concert One', cursive;
+  font-size: 60px;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.projects{
+  font-family: "Roboto"
+}
+
+/* .projects h2{
+  font-family: 'Concert One', cursive;
+} */
+
+.projects ul{
+  padding-inline-start: 0px;
+}
+
+.about-me{
+  font-family: "Roboto"
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+li{
+  list-style-type: none;
+}
+.headshot{
+  border-radius: 50%;
+  max-width: 30%;
+}
+
+p {
+  padding: 5px 25px;
+}
+
+section {
+  min-height: 200px;
+  padding: 6% 0;
+  /* background-color: #bbb; */
+}
+
+section:nth-child(even) {
+  /* background-color: #ddd; */
+}
+
+/* This will activate if the screen is bigger than 700px */
+
+@media only screen and (min-width: 700px){
+  
+  .skillSymbolsAndList{
+    display: flex;
+   }
+   
+   .skillSymbolsAndList ul{
+     margin-block-start: 0em;
+     margin-block-end: 0em;
+    }
+   
+   
+   .skillsListBox{
+     background: dodgerblue;
+     /* padding: 40px; */
+     flex: 30%;
+     margin-right: 20%;
+     /* padding-left: 10%; */
+     /* display: inline-block; */
+   }
+   
+   .skillsListContent{
+     /* justify-content: right; */
+     text-align: left;
+     padding-left: 10%;
+     padding-top: 0px;
+   }
+   
+   .skillSymbolsBox{
+     /* display: inline-block;
+     margin: auto; */
+     flex: 50%;
+     /* text-align: end; */
+     /* overflow: hidden;
+     background-size: cover;
+     background-position: center;
+     background-image: url(./ImageFiles/SkillsLogosAlpha.png); */
+     margin-left: 20%;
+     margin-top: 0px;
+   }
+   
+   /* This line makes all items after Home reappear */ 
+   .nav a:not(:first-child) {
+     display: block;
+    }
+
+   .nav a {
+      float: left;
+      display: block;
+      text-align: center;
+    }
+
+   .hamburger {
+    float: right;
+    display: none;
+  }
+
+   }
+}
+
+
+
+/* The section below contains the prior css work for the nav bar prior to
+   adding in jquery and alternate css styling */
+
+/* .nav {
+  padding: 1% 0;
+  background-color: rgb(224, 224, 224);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.nav ul{
+  padding-inline-start: 20px;
+  padding: 0 10%;
+}
+
+a, a:link, a:visited, a:focus, a:active{
+  color:rgb(0, 0, 0);
+  text-decoration:none; 
+  cursor: crosshair;
+}
+
+a:hover{
+  color:rgb(184, 95, 12)
+}
+
+
+nav li{
+  display: flex;
+  font-family: "Pacifico";
+  list-style-type: none;
+  width: 20%;
+  float: left;  
+}
+
+nav li a:link{
+  color:inherit;
+} 
+
+.hamburger{
+  max-width: 50px;
+  text-align: right;
+  justify-content: right;
+  justify-items: right;
+}
+
+header {
+  padding: 5% 0;
+  flex-grow: inherit;
+  flex-shrink: inherit; 
+}
+
+*/
