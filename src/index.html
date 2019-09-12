@@ -4,32 +4,20 @@
     <title>David Omstead Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
-    <link href="https://fonts.googleapis.com/css?family=Dosis|Roboto&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Concert+One&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="../imageFiles/Corgifavicon.ico" />
     <link rel="stylesheet" href="../index.css">
+    <link rel="shortcut icon" href="../imageFiles/Corgifavicon.ico" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Concert+One|Dosis|Muli|Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>   
         <nav role="navigation" class = "nav">
             <ul>
-                <!-- <li class= "nav-home"> -->
-                    <a class="nav-home" href="#"><li>Home</li></a>
-                <!-- </li> -->
-                <!-- <li class= "nav-about-me"> -->
-                    <a class="nav-about-me nav-link" href="#about-me"><li>About Me</li></a>
-                <!-- </li> -->
-                <!-- <li class= "nav-skils"> -->
-                    <a class="nav-skills nav-link" href="#skills"><li>Skills</li></a>
-                <!-- </li> -->
-                <!-- <li class= "nav-projects">  -->
-                    <a class="nav-projects nav-link" href="#projects"><li>Projects</li></a>
-                <!-- </li> -->
-                <!-- <li class= "nav-contact-me"> -->
-                    <a class="nav-contact-me nav-link" href="#contactMe"><li>Contact Me</li></a>
-                <!-- </li> -->
+                <a class="nav-home" href="#"><li>Home</li></a>
+                <a class="nav-about-me nav-link" href="#about-me"><li>About Me</li></a>
+                <a class="nav-projects nav-link" href="#projects"><li>Projects</li></a>
+                <a class="nav-skills nav-link" href="#skills"><li>Skills</li></a>
+                <a class="nav-contact-me nav-link" href="#contact-me"><li>Contact Me</li></a>
                 <button class= "hamburger"> &#9776; </button>
                 <button class= "cross"> &#735; </button>    
             </ul>    
@@ -38,36 +26,90 @@
     <main role="main">
         <div role="banner" class = "home" id = "home">
             <h1>David Omstead</h1>
-            <img src = "../ImageFiles/TreeWIthLogosCropped.png" alt= "Tree with Javascript,HTML,CSS,and Python Logo" class = "Tree"/>
+            <img src = "../ImageFiles/TreeWIthLogosCropped.png" alt= "Tree with Javascript,HTML,CSS,and Python Logo" class = "tree"/>
             <h2>Let's Grow Technology Together</h2>
         </div>
 
         <section class = "about-me" id = "about-me">
-            <h2>About Me</h2>
-            <p>Hi, my name is David and I am a Full Stack Developer located in Phoenix, AZ.</p>
-            <img src= "../ImageFiles/Headshot Picture White Splash 2.jpg" alt = "Headshot showing a man in a suit smiling casually" class ="headshot">
-            <p>Tech in nature, and the nature of tech, are two things I have always found fascinating. Right now researchers around the world are discovering that frogs are dying at an alarming rate, with many species potentially facing the threat of extinction. 
-                It's basically the Frogpocalypse. Emerging tech could change that reality however, alongside changing reality as we understand it. Every year new advancements in technology change our relationship with the earth and have the potential to radically alter our understanding of it. </p>
-            <p>Even seemingly unrelated tech advances the human experience and how we interact with the world. I have not yet seen a rainforest in person, but with an app on my phone I can.
-                With VR I can walk through the trees. Improvements in AI and our evolving understanding of how to develop more capable neural networks is paving the way for rampant growth in many sectors, 
-                ranging from robotics to healthcare. Even helping to improve the back-end logic and efficiency for an insurance provider could decrease nationwide premiums by 5%, and that could fund research that leads to a cure for humanities most devastating diseases. 
-            </p>
-            <p>We could be responsible for the next great advancement in human technology, or at least get us all a little closer. Let's build something together!</p>
-            <!-- <button>View My Resume</button> -->
+            <div class = "about-me-container">
+                <div class= "section-title">
+                <h2>About Me</h2>
+                </div>
+                <div class = "headshot-container" >
+                    <img src= "../ImageFiles/Headshot Picture White Splash 2.jpg" alt = "Headshot showing a man in a suit smiling casually" class ="headshot">
+                    <p class= "headshot-text">"Hi, my name is David and I am a Full Stack Developer located in Phoenix, AZ. We could be responsible for the next great advancement in technology, or just make what we have even better. Let's build something together!"</p>
+                </div>
+
+                <div class = "bio-paragraphs">
+                    <div class = "bio-1">
+                        <p>Tech in nature, and the nature of tech, are two things I have always found fascinating. Right now researchers around the world are discovering that frogs are dying at an alarming rate, with many species potentially facing the threat of extinction. 
+                        It's basically the Frogpocalypse.
+                        </p> 
+                        <p>Emerging tech could change that reality however, alongside changing reality as we understand it. Every year new advancements in technology change our relationship with the earth and have the potential to radically alter our understanding of it. 
+                        </p>    
+                    </div>
+                    <div class = "bio-2">
+                        <p>Seemingly unrelated tech can advance the human experience and change how we interact with the world. I have not yet seen a rainforest in person, but with an app on my phone I can.
+                        With VR I can walk through the trees. Improvements in AI and our evolving understanding of how to develop more capable neural networks is paving the way for rampant growth in many sectors, 
+                        ranging from robotics to healthcare. 
+                        </p>
+                        <p>Even helping to improve the back-end logic and efficiency for an insurance provider could decrease nationwide premiums by 5%, and that could fund research that leads to a cure for humanities most devastating diseases. 
+                        </p>    
+                    </div>
+                </div>
+                <!-- <button>View My Resume</button> -->
+            </div>
+        </section>
+
+        <section class = "projects" id = "projects">
+            <div class= "section-title">
+            <h2> Projects</h2>
+            </div>
+           <h3>Myth Quiz</h3>
+           <div class= "projects-image-and-description">
+                <div class= "projects-image">
+                    <img src = "../ImageFiles/MythQuiz.png" alt= "A screenshot of MythQuiz" class= "project-screenshot">
+                </div>
+                <div class= "projects-description" >
+                    <p> Found yourself in an argument about whether Bacchus is the god with grapes, 
+                        or is he maybe the one holding the trident? Then this quiz is for you! 
+                        Myth Quiz utilizes the OpenTDB trivia database. Test your knowledge and challenge your friends to a round of Myth Quiz, 
+                        and find out who the real god is! 
+                    </p>
+                    <div class= "project-links">
+                        <a href = "https://domstead.github.io/MythQuiz/" class="play-link"> MythQuiz Live</a>
+                        <a href = "https://github.com/DOmstead/MythQuiz" class="github-link"> GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class= "tech-used">
+                <div class= "tech-used-images">    
+                    <img src = "../ImageFiles/html-5-icon.png" alt= "HTML5" >
+                    <img src = "../ImageFiles/css-3-icon.png" alt= "CSS3" >
+                    <img src = "../ImageFiles/javascript_logo.png" alt= "HTML5" class= "">
+                    <img src = "../ImageFiles/jQuery.png" alt= "HTML5" class= "">
+                    <img src = "../ImageFiles/nodejslogo.png" alt= "HTML5" class= "">
+                </div>
+            </div>        
         </section>
 
         <section class = "skills" id = "skills">
+            <div class= "section-title">
             <h2>Skills</h2>
-            <div class="skillSymbolsAndList">
-            <div class= "skillSymbolsBox">
-            <img src = "../ImageFiles/SkillsLogosAlpha.png" alt = "Image showing logos for HTMLS, CSS, Python, Javascript, Angular JS, and Github" class = "skillSymbolsContent">
             </div>
+            <div class="skillSymbolsAndList">
+                <div class= "skillSymbolsBox">
+                    <img src = "../ImageFiles/SkillsLogosAlpha2.png" alt = "Image showing logos for HTMLS, CSS, Python, Javascript, Angular JS, and Github" class = "skillSymbolsContent">
+                </div>
                 <div class= "skillsListBox">
                     <div class= "skillsListContent">
                         <ul>
-                        <li class= "sectionHead">Languages</li>
+                        <li class= "sectionHead">Languages/Libraries</li>
                             <ul>
                                 <li>Javascript</li>
+                                <li>JQuery</li>
+                                <li>React</li>
+                                <li>Angular</li>
                                 <li>Python</li>
                                 <li>HTML</li>
                             </ul>
@@ -82,49 +124,39 @@
                                 <li>Github</li>
                                 <li>Gitbash</li>
                                 <li>Repl.it</li>
+                                <li>CMD</li>
                             </ul> 
                         </ul>
                     </div>
                 </div>    
             </div>
         </section>  
-
-        <section class = "projects" id = "projects">
-           <h2> Projects</h2>
-           <div>Myth Quiz</div>
-           <img src = "../ImageFiles/GreekGod2.jpg" alt= "A statue of Demeter" class= "Statue">
-           <p>Ever got into an argument, I mean, discussion, about whether Bacchus is the god with grapes, 
-               or is he maybe the one holding the trident? Then this quiz is for you! 
-               Myth Quiz utilizes the OpenTDB trivia database. Test your knowledge and challenge your friends to a round of Myth Quiz, and find out who the real god is! </p>
-            <ul>Technology Used
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Javascript</li>
-                <li>Github & Gitbash</li>
-            </ul>    
-            <a href = "https://domstead.github.io/MythQuiz/"> Play MythQuiz!</a>
-            <a href = "https://github.com/DOmstead/MythQuiz"> Checkout the repo!</a>
-        </section>
       
     </main>
-    <footer role="region" class = "contactMe" id = "contactMe">
+    <footer role="region" class = "contact-me" id = "contact-me">
         <div class= "contactMe">
-            <img src = "../ImageFiles/Talk Bubbles.jpg" alt = "Conversation Bubbles">
-            <span class= "contact">Contact Me</span>
+            <div class= "section-title">
+            <h2>Contact Me</h2>
+            </div>        
         </div>
-        <div class= "location">
-        <img src = "../ImageFiles/Pin Symbol 2.png" alt ="Location Pin Symbol">
-         "Phoenix,AZ"
-        </div> 
-        <img src = "../ImageFiles/Mail Symbol 2.png" alt = "Mail Symbol">
-        <a href = "mailto: Contact@DavidOmstead.com">Email
-        </a>
-        <a href = "https://www.linkedin.com/in/davidomstead">
-            <img src = "../ImageFiles/LinkedIn Symbol 2.png" alt = "LinkedIN Symbol">
-        </a>
-        <a href = "https://github.com/DOmstead" >
-            <img src = "../ImageFiles/github icon 2.png" alt = "Git Symbol" class = "contact-me-git">
-        </a>
+        <div class= contact-container>
+            <a href="https://www.google.com/maps/place/Phoenix,+AZ/@33.3966839,-112.1127453,10z/data=!4m5!3m4!1s0x872b12ed50a179cb:0x8c69c7f8354a1bac!8m2!3d33.4483771!4d-112.0740373" target="_blank">
+                <img src = "../ImageFiles/Pin Symbol 3.jpg" alt ="Location Pin Symbol" class= "location">
+                <span>Phoenix, AZ</span>
+            </a> 
+            <a href = "mailto: Contact@DavidOmstead.com">
+                <img src = "../ImageFiles/Email Symbol.jpg" alt = "Mail Symbol">
+                <span>E-mail</span>
+            </a>
+            <a href = "https://www.linkedin.com/in/davidomstead">
+                <img src = "../ImageFiles/LinkedIn Symbol 3.jpg" alt = "LinkedIN Symbol">
+                <span>LinkedIn</span>
+            </a>
+            <a href = "https://github.com/DOmstead" >
+                <img src = "../ImageFiles/github icon 3.jpg" alt = "Git Symbol" class = "contact-me-git">
+                <span>GitHub</span>
+            </a>
+        </div>
     </footer>
 
 

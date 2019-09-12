@@ -11,6 +11,7 @@ body {
   line-height: 1.5;
 }
 
+
 .nav{
   background-color: #333;
   overflow: hidden;
@@ -58,7 +59,7 @@ body {
 
 .nav ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
 .nav li {display: block;   padding:15px 15px; }
-.nav a:not(:first-child) li:hover{display: block;    background:#ffffff; color: black; padding:15px 10px;}
+.nav a:not(:first-child) li:hover{display: block;    background:#ffffff; color: black; padding:15px 15px;}
 
 
 .nav-home {
@@ -67,21 +68,20 @@ body {
   max-width: 65px;
 }
 
-.contact-me {
-  /* display: flex;
-  flex-direction: row; */
-  background-color: rgb(54, 54, 54);
-  padding: 1% 0;
-  color: #f2f2f2;
-  font-family: 'Dosis', cursive;
-  /* margin-top: 30px; */
-  font-size: 45px;
-  text-align: center;
+/* Consider editing Tree size */
+.tree{
+  max-width: 30%
 }
 
-.contact-me a {
-  padding: 10px;
-  max-width: 50%;
+.headshot{
+  border-radius: 50%;
+  max-width: 40%;
+}
+
+.contact-me {
+
+  padding: 1% 0;
+  margin-bottom: 20px
 }
 
 .contact{
@@ -134,14 +134,27 @@ body {
   font-size: 26px;
 }
 
-.skills h2, .projects h2, .about-me h2{
+.skills h2, .projects h2, .about-me h2, .contact-me h2{
   font-family: 'Concert One', cursive;
   font-size: 60px;
+  color: aliceblue;
+  min-height: 150px;
+  border-radius: 0 0 85% 85% / 30%;
   margin: 0;
   margin-bottom: 15px;
+  background-image: url("../imageFiles/TreeBackground2crop.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.projects{
+.section-title h2{
+  padding-top: 40px;
+  text-shadow: 2px 2px #333;
+}
+
+.projects {
   font-family: "Roboto"
 }
 
@@ -149,8 +162,38 @@ body {
   font-family: 'Concert One', cursive;
 } */
 
+.project-screenshot{
+  border: #333 solid 1px;
+  width: 80%;
+}
+
 .projects ul{
   padding-inline-start: 0px;
+}
+
+.project-links{
+  margin: 50px 0px;
+  text-align: center;
+}
+
+.play-link, .github-link{
+  font-family: "Muli", sans-serif;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  padding: 25px;
+  font-weight: bolder;
+  border-right: #333 solid 1px;
+}
+
+.github-link{
+  border-right:none;
+}
+
+.tech-used-images img{
+  margin-top: 25px;
+  height: 75px;
 }
 
 .about-me{
@@ -165,10 +208,6 @@ img {
 li{
   list-style-type: none;
 }
-.headshot{
-  border-radius: 50%;
-  max-width: 30%;
-}
 
 p {
   padding: 5px 25px;
@@ -176,75 +215,182 @@ p {
 
 section {
   min-height: 200px;
-  padding: 6% 0;
+  padding: 6% 0 0 0;
   /* background-color: #bbb; */
 }
+
+.contact-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-content: space-around;
+  margin: 0 0 5px 35%
+}
+
+.contact-container a {
+  display: flex;
+  flex-direction: row;
+  color: black;
+  font-size: 20px;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 10px;
+
+}
+
+.contact-container img{
+  border-radius: 20%;
+  height: 35px;
+}
+.contact-container a span{
+  padding-top: 5px;
+  margin-left: 5px;
+  font-family: 'Muli', sans-serif;
+}
+
 
 section:nth-child(even) {
   /* background-color: #ddd; */
 }
 
+
 /* This will activate if the screen is bigger than 700px */
 
 @media only screen and (min-width: 700px){
   
-  .skillSymbolsAndList{
-    display: flex;
-   }
-   
-   .skillSymbolsAndList ul{
-     margin-block-start: 0em;
-     margin-block-end: 0em;
-    }
-   
-   
-   .skillsListBox{
-     background: dodgerblue;
-     /* padding: 40px; */
-     flex: 30%;
-     margin-right: 20%;
-     /* padding-left: 10%; */
-     /* display: inline-block; */
-   }
-   
-   .skillsListContent{
-     /* justify-content: right; */
-     text-align: left;
-     padding-left: 10%;
-     padding-top: 0px;
-   }
-   
-   .skillSymbolsBox{
-     /* display: inline-block;
-     margin: auto; */
-     flex: 50%;
-     /* text-align: end; */
-     /* overflow: hidden;
-     background-size: cover;
-     background-position: center;
-     background-image: url(./ImageFiles/SkillsLogosAlpha.png); */
-     margin-left: 20%;
-     margin-top: 0px;
-   }
-   
-   /* This line makes all items after Home reappear */ 
-   .nav a:not(:first-child) {
-     display: block;
-    }
-
-   .nav a {
-      float: left;
-      display: block;
-      text-align: center;
-    }
-
-   .hamburger {
-    float: right;
-    display: none;
+  /* This line makes all items after Home reappear */ 
+  .nav a:not(:first-child) {
+    display: block;
   }
 
-   }
+  .nav a {
+    float: left;
+    display: block;
+    text-align: center;
+  }
+
+  .hamburger {
+   float: right;
+   display: none;
+  }
+  
+  .headshot-container{
+    display: flex;
+    flex-direction: row;
+  }
+
+  /* Currently working here. Figure out how to allign text with center of headshot */
+  .headshot-text{
+    padding: 15% 0px 20% 0px;
+    margin: 0px 50px;
+    font-weight: bolder;
+    font-style: italic;
+  }
+
+  .headshot{
+    padding-top: 5%;
+    padding-left: 5%;
+    width: 751px;
+    height: 100%;
+  }
+
+  .bio-paragraphs, .projects-image-and-description{
+    display: flex;
+    flex-direction: row;
+    text-align: left
+  }
+  .bio-1, .projects-image{
+    border-right: #333 solid 1px;
+    flex: 50%;
+  }
+
+  .bio-2, .projects-description{
+    flex: 50%;
+  }
+
+  .project-screenshot{
+    margin: 20px;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+  }
+
+  .project-links{
+    margin: 100px;
+    display: flex;
+    flex-direction: row;
+    flex: 50%;
+
+  }
+  
+  .play-link, .github-link{
+    font-size: 25px;
+  }
+
+  .github-link{
+    border-right:none;
+  }
+  
+
+  .skillSymbolsAndList{
+    display: flex;
+  }
+   
+  .skillSymbolsAndList ul{
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+  }
+   
+   
+  .skillsListBox{
+    background: rgb(0, 151, 0);
+    color: white;
+    padding: 0 40px 10px 0;
+    flex: 50%;
+    margin: 0 18% 0 2%;
+    /* padding-left: 10%; */
+    /* display: inline-block; */
+  }
+   
+  .skillsListContent{
+    /* justify-content: right; */
+    text-align: left;
+    padding-left: 10%;
+    padding-top: 0px;
+  }
+   
+  .skillSymbolsBox{
+    /* display: inline-block;
+    margin: auto; */
+    flex: 50%;
+    text-align: end;
+    /* overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-image: url(./ImageFiles/SkillsLogosAlpha.png); */
+    margin: 0 2% 0 18%;
+  }
+
+  .skillSymbolsBox img{
+    min-height: 322px;
+    min-width: 210px;
+  }
+
+
+  .contact-container{
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0;
+  }
+
+  .contact-container a {
+    text-align: center;
+    cursor: pointer;
+  }
 }
+
 
 
 
