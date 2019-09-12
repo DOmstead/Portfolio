@@ -11,11 +11,22 @@ body {
   line-height: 1.5;
 }
 
+li {
+  list-style-type: none;
+}
 
-.nav{
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* The following section of code makes the NavBar display correctly */
+
+.nav {
   background-color: #333;
   overflow: hidden;
 }
+
 .nav a {
   float: none;
   display: block;
@@ -23,15 +34,9 @@ body {
   text-decoration: none;
   color: #f2f2f2;
   font-size: 17px;
-  /* padding: 14px 16px; */
 }
 
-/* .nav a:hover{
-  background-color: rgb(153, 36, 36);
-  color: black;
-} */
-
-.hamburger, .cross{
+.hamburger, .cross {
   position:absolute;
   top:0;
   right:0;
@@ -44,22 +49,36 @@ body {
   font-weight:bold;
   cursor:pointer;
   outline:none;
-  
 }
 
-.cross{
+.cross {
   font-size: 65px;
   line-height: 70px;
 }
 
-/* This line keeps all nav links after home hidden */
+/* This line keeps all links in the Navbar after home hidden */
 .nav a:not(:first-child) {
   display: none;
 }
 
-.nav ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
-.nav li {display: block;   padding:15px 15px; }
-.nav a:not(:first-child) li:hover{display: block;    background:#ffffff; color: black; padding:15px 15px;}
+.nav ul {
+  margin: 0;
+  padding: 0; 
+  list-style-type: none; 
+  list-style-image: none;
+}
+
+.nav li {
+  display: block;   
+  padding: 15px 15px; 
+}
+
+.nav a:not(:first-child) li:hover {
+  display: block;    
+  background:#ffffff; 
+  color: black; 
+  padding:15px 15px;
+}
 
 
 .nav-home {
@@ -68,73 +87,88 @@ body {
   max-width: 65px;
 }
 
-/* Consider editing Tree size */
-.tree{
+/* This sections applies styling to the first visible section past the NavBar */
+.tree {
   max-width: 30%
 }
 
-.headshot{
+.headshot {
   border-radius: 50%;
   max-width: 40%;
 }
 
-.contact-me {
+/* This sections applies styling for the about me section */
 
-  padding: 1% 0;
-  margin-bottom: 20px
+.about-me {
+  font-family: "Roboto"
 }
 
-.contact{
-  display: flex;
-  justify-content: center;    
-  padding-bottom: 30px;
+p {
+  padding: 5px 25px;
 }
 
-/* .skillSymbolsAndList{
- display: flex;
+section {
+  min-height: 200px;
+  padding: 6% 0 0 0;
 }
 
-.skillSymbolsAndList ul{
-  margin-block-start: 0em;
-  margin-block-end: 0em;
- }
+/* This section applies styling for the Projects Section */
 
-.skillsListBox{
-  background: dodgerblue;
-  flex: 30%;
-  margin-right: 20%;
+.projects {
+  font-family: "Roboto"
 }
 
-.skillsListContent{
-  text-align: left;
-  padding-left: 10%;
-  padding-top: 0px;
+.project-screenshot {
+  border: #333 solid 1px;
+  width: 80%;
 }
 
-.skillSymbolsBox{
-  flex: 50%;
-  margin-left: 20%;
-  margin-top: 0px;
-} */
-
-.skillSymbolsContent{
-  /* justify-content: right; */
-}
-
-.skills ul{
+.projects ul {
   padding-inline-start: 0px;
 }
 
-.skills .sectionHead{
+.project-links {
+  margin: 50px 0px;
+  text-align: center;
+}
+
+.play-link, .github-link {
+  font-family: "Muli", sans-serif;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  padding: 25px;
+  font-weight: bolder;
+  border-right: #333 solid 1px;
+}
+
+.github-link {
+  border-right:none;
+}
+
+.tech-used-images img {
+  margin-top: 25px;
+  height: 75px;
+}
+
+/* This section applies styling for the Skills section and also creates the Parallax effect
+   on the section headers */
+
+.skills ul {
+  padding-inline-start: 0px;
+}
+
+.skills .sectionHead {
   font-size: 40px;
   font-weight: bold
 }
 
-.skills li{
+.skills li {
   font-size: 26px;
 }
 
-.skills h2, .projects h2, .about-me h2, .contact-me h2{
+.skills h2, .projects h2, .about-me h2, .contact-me h2 {
   font-family: 'Concert One', cursive;
   font-size: 60px;
   color: aliceblue;
@@ -149,74 +183,22 @@ body {
   background-repeat: no-repeat;
 }
 
-.section-title h2{
+.section-title h2 {
   padding-top: 40px;
   text-shadow: 2px 2px #333;
 }
 
-.projects {
-  font-family: "Roboto"
+/* This section applies styling for the Contact Me Section */
+
+.contact-me {
+  padding: 1% 0;
+  margin-bottom: 20px
 }
 
-/* .projects h2{
-  font-family: 'Concert One', cursive;
-} */
-
-.project-screenshot{
-  border: #333 solid 1px;
-  width: 80%;
-}
-
-.projects ul{
-  padding-inline-start: 0px;
-}
-
-.project-links{
-  margin: 50px 0px;
-  text-align: center;
-}
-
-.play-link, .github-link{
-  font-family: "Muli", sans-serif;
-  text-align: center;
-  text-decoration: none;
-  color: black;
-  font-size: 20px;
-  padding: 25px;
-  font-weight: bolder;
-  border-right: #333 solid 1px;
-}
-
-.github-link{
-  border-right:none;
-}
-
-.tech-used-images img{
-  margin-top: 25px;
-  height: 75px;
-}
-
-.about-me{
-  font-family: "Roboto"
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-li{
-  list-style-type: none;
-}
-
-p {
-  padding: 5px 25px;
-}
-
-section {
-  min-height: 200px;
-  padding: 6% 0 0 0;
-  /* background-color: #bbb; */
+.contact {
+  display: flex;
+  justify-content: center;    
+  padding-bottom: 30px;
 }
 
 .contact-container{
@@ -236,30 +218,25 @@ section {
   text-align: center;
   cursor: pointer;
   margin-bottom: 10px;
-
 }
 
-.contact-container img{
+.contact-container img {
   border-radius: 20%;
   height: 35px;
 }
-.contact-container a span{
+
+.contact-container a span {
   padding-top: 5px;
   margin-left: 5px;
   font-family: 'Muli', sans-serif;
 }
 
-
-section:nth-child(even) {
-  /* background-color: #ddd; */
-}
-
-
 /* This will activate if the screen is bigger than 700px */
 
 @media only screen and (min-width: 700px){
   
-  /* This line makes all items after Home reappear */ 
+  /* This section applies styling for the NavBar */
+  /* This line makes all items in the Navbar after Home reappear */ 
   .nav a:not(:first-child) {
     display: block;
   }
@@ -275,41 +252,44 @@ section:nth-child(even) {
    display: none;
   }
   
-  .headshot-container{
+  /* This section applies styling for the About Me and Projects Section. Code is used for both 
+     to ensure code remains DRY. */
+
+  .headshot-container {
     display: flex;
     flex-direction: row;
   }
 
-  /* Currently working here. Figure out how to allign text with center of headshot */
-  .headshot-text{
+  .headshot-text {
     padding: 15% 0px 20% 0px;
     margin: 0px 50px;
     font-weight: bolder;
     font-style: italic;
   }
 
-  .headshot{
+  .headshot {
     padding-top: 5%;
     padding-left: 5%;
     width: 751px;
     height: 100%;
   }
 
-  .bio-paragraphs, .projects-image-and-description{
+  .bio-paragraphs, .projects-image-and-description {
     display: flex;
     flex-direction: row;
     text-align: left
   }
-  .bio-1, .projects-image{
+
+  .bio-1, .projects-image {
     border-right: #333 solid 1px;
     flex: 50%;
   }
 
-  .bio-2, .projects-description{
+  .bio-2, .projects-description {
     flex: 50%;
   }
 
-  .project-screenshot{
+  .project-screenshot {
     margin: 20px;
     justify-content: center;
     justify-items: center;
@@ -317,7 +297,7 @@ section:nth-child(even) {
     align-items: center;
   }
 
-  .project-links{
+  .project-links {
     margin: 100px;
     display: flex;
     flex-direction: row;
@@ -325,61 +305,51 @@ section:nth-child(even) {
 
   }
   
-  .play-link, .github-link{
+  .play-link, .github-link {
     font-size: 25px;
   }
 
-  .github-link{
+  .github-link {
     border-right:none;
   }
   
-
-  .skillSymbolsAndList{
+  /* This section applies styling for the Skills Section */
+  .skillSymbolsAndList {
     display: flex;
   }
    
-  .skillSymbolsAndList ul{
+  .skillSymbolsAndList ul {
     margin-block-start: 0em;
     margin-block-end: 0em;
   }
    
-   
-  .skillsListBox{
-    background: rgb(0, 151, 0);
+  .skillsListBox {
+    background: #21422f;
     color: white;
     padding: 0 40px 10px 0;
     flex: 50%;
     margin: 0 18% 0 2%;
-    /* padding-left: 10%; */
-    /* display: inline-block; */
   }
    
-  .skillsListContent{
-    /* justify-content: right; */
+  .skillsListContent {
     text-align: left;
     padding-left: 10%;
     padding-top: 0px;
   }
    
-  .skillSymbolsBox{
-    /* display: inline-block;
-    margin: auto; */
+  .skillSymbolsBox {
     flex: 50%;
     text-align: end;
-    /* overflow: hidden;
-    background-size: cover;
-    background-position: center;
-    background-image: url(./ImageFiles/SkillsLogosAlpha.png); */
     margin: 0 2% 0 18%;
   }
 
-  .skillSymbolsBox img{
+  .skillSymbolsBox img {
     min-height: 322px;
     min-width: 210px;
   }
 
-
-  .contact-container{
+  /* This section applies styling for the Contact Me Section */
+  .contact-container {
     flex-direction: row;
     justify-content: space-evenly;
     margin: 0;
@@ -390,64 +360,3 @@ section:nth-child(even) {
     cursor: pointer;
   }
 }
-
-
-
-
-/* The section below contains the prior css work for the nav bar prior to
-   adding in jquery and alternate css styling */
-
-/* .nav {
-  padding: 1% 0;
-  background-color: rgb(224, 224, 224);
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 80px;
-  overflow: hidden;
-  text-decoration: none;
-}
-
-.nav ul{
-  padding-inline-start: 20px;
-  padding: 0 10%;
-}
-
-a, a:link, a:visited, a:focus, a:active{
-  color:rgb(0, 0, 0);
-  text-decoration:none; 
-  cursor: crosshair;
-}
-
-a:hover{
-  color:rgb(184, 95, 12)
-}
-
-
-nav li{
-  display: flex;
-  font-family: "Pacifico";
-  list-style-type: none;
-  width: 20%;
-  float: left;  
-}
-
-nav li a:link{
-  color:inherit;
-} 
-
-.hamburger{
-  max-width: 50px;
-  text-align: right;
-  justify-content: right;
-  justify-items: right;
-}
-
-header {
-  padding: 5% 0;
-  flex-grow: inherit;
-  flex-shrink: inherit; 
-}
-
-*/

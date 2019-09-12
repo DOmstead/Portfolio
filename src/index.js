@@ -1,57 +1,46 @@
+//Line 2 is an instruction for ESLint during development
 /* eslint-env jquery */
+
+//The below block of code ensures that once the page has finished loading the
+//event listeners and relevent code all run. 
 
 $(document).ready(function(){
   $('.cross').hide();
-  // $('.nav-skills, .nav-projects, .nav-about-me, .nav-contact-me').hide();
-  
   /* Event Listeners Below */
   hamburger();
   cross();
   checkHamburger();
-  
-  // checkSize();
-  // $(window).resize(checkSize);
-
-  console.log('The page loaded and the index.js file ran');
+  greeting();
 });
 
+//This function deals with the hamburger button on the Navbar.
 function hamburger(){
   $('.hamburger').click( function(){
-    console.log('hamburger button was clicked');
     $('.nav a').css('display', 'block');
     $('.nav-home').css('max-width','85%');
     $('.hamburger').hide();
     $('.cross').show();
-    // $('.nav a').css('float', 'none');
-    // $('.nav a').css('text-align', 'left');
-    // $('.nav-skills, .nav-projects, .nav-about-me, .nav-contact-me').toggle(function(){
-    //   $('.hamburger').hide();
-    //   $('.cross').show();
-    // });
   });
 }
 
+//This function deals with the cross button on the Navbar.
 function cross(){
   $('.cross').click( function(){
-    console.log('cross button was clicked');
     $('.nav-link').css('display', 'none');
     $('.nav-home').css('max-width', '65px');
     $('.cross').hide();
     $('.hamburger').show();
-    // $('.nav a').css('float', 'left');
-    // $('.nav a').css('text-align', 'center');
-    // $('.nav-skills, .nav-projects, .nav-about-me, .nav-contact-me').toggle(function(){
-    //   $('.cross').hide();
-    //   $('.hamburger').show();
-    // });
   });
 }
 
-// function checkSize(){
-//   if ($('.sizeChecker').css('display') === 'none'){
-//     console.log('checkSize ran');
-//   }
-// }
+//This function prints a greeting to the console for anyone interested. If you're 
+//reading this comment that means you! Thank you for taking the time to look through my code. 
+function greeting(){
+  console.log('Hello there! Thank you for taking the time to view my website. Since you are looking at the console you are likely a fellow developer, hiring manager, or recruiter. This site was created using HTML5, CSS3, JavaScript, and jQuery. Webpack was also used during the development phase. Should you want to see the code it is all available on my Github page. A link to my account is provided at the bottom of the page. Please feel free to reach out and let me know what you think! I’m always open to feedback, conversations, or new opportunities. Thank you again and have a great day! David Omstead');
+}
+
+//This function runs when the screen is resized. It ensures that the nav bar
+//components display correctly when the screen is resized. 
 
 function checkHamburger(){
   $(window).on('resize',function(){
@@ -72,6 +61,3 @@ function checkHamburger(){
     } 
   });
 }
-
-/* on line 56 following the first if I wanted to add a second if regarding 
-the size of the screen if it was bigger than 700px */
