@@ -11,6 +11,7 @@ $(document).ready(function(){
   cross();
   checkHamburger();
   greeting();
+  background();
 });
 
 //This function deals with the hamburger button on the Navbar.
@@ -37,6 +38,12 @@ function cross(){
 //reading this comment that means you! Thank you for taking the time to look through my code. 
 function greeting(){
   console.log('Hello there! Thank you for taking the time to view my website. Since you are looking at the console you are likely a fellow developer, hiring manager, or recruiter. This site was created using HTML5, CSS3, JavaScript, and jQuery. Webpack was also used during the development phase. Should you want to see the code it is all available on my Github page. A link to my account is provided at the bottom of the page. Please feel free to reach out and let me know what you think! I’m always open to feedback, conversations, or new opportunities. Thank you again and have a great day! David Omstead');
+}
+
+//This function chnages the background image for section headers.
+function background(){
+  $('.skills h2, .projects h2, .about-me h2, .contact-me h2').css('background-image','url("ImageFiles/TreeBackground1.png")');
+  console.log('background function ran');
 }
 
 //This function runs when the screen is resized. It ensures that the nav bar
