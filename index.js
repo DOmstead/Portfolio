@@ -43,7 +43,6 @@ function greeting(){
 //This function chnages the background image for section headers.
 function background(){
   $('.skills h2, .projects h2, .about-me h2, .contact-me h2').css('background-image','url("ImageFiles/TreeBackground1.png")');
-  console.log('background function ran');
 }
 
 //This function runs when the screen is resized. It ensures that the nav bar
