@@ -3,8 +3,7 @@
 }
 
 body {
-  font-family: "Dosis",
-  sans-serif; 
+  font-family: "Dosis", sans-serif; 
   font-size: 20px;
   color: #444;
   text-align: center;
@@ -21,13 +20,16 @@ img {
 }
 
 /* The following section of code makes the NavBar display correctly */
-
 .nav {
   background-color: #333;
   overflow: hidden;
+  position: fixed;
+  top:0;
+  left: 0px;
+  width: 100%;
 }
 
-.nav a {
+.nav li {
   float: none;
   display: block;
   text-align: left;
@@ -43,12 +45,14 @@ img {
   background: inherit;
   color: #ddd;
   line-height: 45px;
-  padding:13px 6%;
+  padding:5px 6%;
   border: 0;
   font-size:1.4em;
   font-weight:bold;
   cursor:pointer;
   outline:none;
+  max-height: 55px;
+  margin: 0px 8px 0px 0px;
 }
 
 .cross {
@@ -57,7 +61,7 @@ img {
 }
 
 /* This line keeps all links in the Navbar after home hidden */
-.nav a:not(:first-child) {
+.nav li:not(:first-child) {
   display: none;
 }
 
@@ -68,18 +72,22 @@ img {
   list-style-image: none;
 }
 
-.nav li {
+.nav a {
   display: block;   
-  padding: 15px 15px; 
+  padding: 15px 15px;
+  color: #f2f2f2; 
 }
 
-.nav a:not(:first-child) li:hover {
+.nav a:visited{
+  color: inherit;
+}
+
+.nav li:not(:first-child) a:hover {
   display: block;    
   background:#ffffff; 
   color: black; 
   padding:15px 15px;
 }
-
 
 .nav-home {
   background-color: #4CAF50;
@@ -97,14 +105,18 @@ img {
   max-width: 40%;
 }
 
-/* This sections applies styling for the about me section */
+h1{
+  padding-top: 30px;
+}
 
+/* This sections applies styling for the about me section */
 .about-me {
   font-family: "Roboto"
 }
 
 p {
   padding: 5px 25px;
+  text-align: left;
 }
 
 section {
@@ -113,9 +125,18 @@ section {
 }
 
 /* This section applies styling for the Projects Section */
-
 .projects {
   font-family: "Roboto"
+}
+
+.project-title{
+  font-size: 32px;
+}
+
+.project-title-Cant-decide{
+  font-size: 32px;
+  padding-top: 24px;
+  border-top: #333 solid 1px;
 }
 
 .project-screenshot {
@@ -154,9 +175,15 @@ section {
 
 /* This section applies styling for the Skills section and also creates the Parallax effect
    on the section headers */
-
-.skills ul {
+.skillsListContent {
   padding-inline-start: 0px;
+}
+
+.skillListItems{
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  padding-inline-start: 0px;
+  font-size: 26px;
 }
 
 .skills .sectionHead {
@@ -164,8 +191,9 @@ section {
   font-weight: bold
 }
 
-.skills li {
+.skills h3 {
   font-size: 26px;
+  margin: 0px;
 }
 
 .skills h2, .projects h2, .about-me h2, .contact-me h2 {
@@ -188,7 +216,6 @@ section {
 }
 
 /* This section applies styling for the Contact Me Section */
-
 .contact-me {
   padding: 1% 0;
   margin-bottom: 20px
@@ -231,16 +258,15 @@ section {
 }
 
 /* This will activate if the screen is bigger than 700px */
-
 @media only screen and (min-width: 700px){
   
   /* This section applies styling for the NavBar */
   /* This line makes all items in the Navbar after Home reappear */ 
-  .nav a:not(:first-child) {
+  .nav li:not(:first-child) {
     display: block;
   }
 
-  .nav a {
+  .nav li {
     float: left;
     display: block;
     text-align: center;
@@ -253,7 +279,6 @@ section {
   
   /* This section applies styling for the About Me and Projects Section. Code is used for both 
      to ensure code remains DRY. */
-
   .headshot-container {
     display: flex;
     flex-direction: row;
@@ -301,7 +326,6 @@ section {
     display: flex;
     flex-direction: row;
     flex: 50%;
-
   }
   
   .play-link, .github-link {
@@ -315,11 +339,6 @@ section {
   /* This section applies styling for the Skills Section */
   .skillSymbolsAndList {
     display: flex;
-  }
-   
-  .skillSymbolsAndList ul {
-    margin-block-start: 0em;
-    margin-block-end: 0em;
   }
    
   .skillsListBox {
