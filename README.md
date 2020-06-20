@@ -11,16 +11,16 @@ Should you want to see the code it is all available right here. Please feel free
 This site also contains links to live versions of my most recent projects as well as github link if you would like to checkout the code for those as well. Links below!
 
 
+Portfolio Website Link:
 
-
-I’m always open to feedback, conversations, or new opportunities. 
+https://domstead.github.io/Portfolio/
 
 
 # Mr TeaSeeks
 
  ![MrTeaSeeksLandingPage](https://user-images.githubusercontent.com/49734565/85107289-97fe0400-b1c2-11ea-8e7a-7ede5be08c80.png)
 
-### Live Link 
+### Live Link: 
  
  https://mr-tea-seeks-frontend.vercel.app/
 
@@ -36,7 +36,7 @@ I’m always open to feedback, conversations, or new opportunities.
 
  ![True_You_Landing_Page](https://user-images.githubusercontent.com/49734565/84541645-a45afc00-acac-11ea-80dc-83d782d9ab3f.png)
 
-### Live Link 
+### Live Link: 
  
 https://true-you.now.sh/
 
@@ -51,7 +51,7 @@ https://github.com/DOmstead/True-You-API
 
 ![I Can't Decide Recipe Result](https://user-images.githubusercontent.com/49734565/72671680-0b7cc900-3a0b-11ea-93fc-bfd20e9be935.png)
 
-### Live Link 
+### Live Link: 
  
 https://domstead.github.io/I-Cant-Decide/
 
