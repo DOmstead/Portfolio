@@ -271,6 +271,15 @@ section {
   font-family: 'Muli', sans-serif;
 }
 
+/* This ensure consistent rendering of the headshot accross IE browsers. */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+
+  .headshot {
+    max-width: 100%;
+    flex-shrink: 0;
+  }
+}
+
 /* This will activate if the screen is bigger than 700px */
 @media only screen and (min-width: 700px){
   
