@@ -173,6 +173,14 @@ section {
   height: 75px;
 }
 
+.true-you-bolded{
+  font-weight: bold;
+}
+
+.true-you-bolded-and-larger{
+  font-weight: bolder;
+}
+
 /* This section applies styling for the Skills section and also creates the Parallax effect
    on the section headers */
 .skillsListContent {
