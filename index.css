@@ -139,6 +139,12 @@ section {
   border-top: #333 solid 1px;
 }
 
+.project-title-True-you{
+  font-size: 32px;
+  padding-top: 24px;
+  border-top: #333 solid 1px;
+}
+
 .project-screenshot {
   border: #333 solid 1px;
   width: 80%;
