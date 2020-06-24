@@ -245,6 +245,7 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  -webkit-justify-content: center;
   align-content: space-around;
   margin: 0 0 5px 35%
 }
@@ -271,13 +272,30 @@ section {
   font-family: 'Muli', sans-serif;
 }
 
-/* This ensure consistent rendering of the headshot accross IE browsers. */
+
+/* This ensure consistent rendering accross IE browsers. */
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
 
   .headshot {
     max-width: 100%;
     flex-shrink: 0;
   }
+
+  .contact-span{
+    text-align: center;
+    -webkit-justify-content: space-between;
+  }
+
+  .contact-container a {
+    -webkit-justify-content: space-between;
+    margin: 10px 30px 10px 30px;
+    /* margin-left: 50px; */
+  }
+
+  .contact-container {
+    justify-content: center;
+  }
+
 }
 
 /* This will activate if the screen is bigger than 700px */
@@ -392,7 +410,8 @@ section {
   /* This section applies styling for the Contact Me Section */
   .contact-container {
     flex-direction: row;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
+    -webkit-justify-content: space-evenly;
     margin: 0;
   }
 
