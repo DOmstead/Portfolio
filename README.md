@@ -1,6 +1,6 @@
 # David Omstead Portfolio Website
 
-Hi, my name is David and I am a Full Stack Developer located in Phoenix, AZ. Thank you for taking the  Let's build something together!
+Hi, my name is David and I am a Full Stack Developer located in Towson, MD. Let's build something together!
 
 Thank you for taking the time to view my website. Since you are looking at my README you are likely a fellow developer, hiring manager, or recruiter. 
 
@@ -8,7 +8,7 @@ This site was created using HTML5, CSS3, JavaScript, and jQuery. Webpack was als
 
 Should you want to see the code it is all available right here. Please feel free to reach out and let me know what you think! 
 
-This site also contains links to live versions of my most recent projects as well as github link if you would like to checkout the code for those as well. Links below!
+This site also contains links to live versions of my most recent projects as well as the github link if you would like to check out the code for those as well. Links below!
 
 
 Portfolio Website Link:
